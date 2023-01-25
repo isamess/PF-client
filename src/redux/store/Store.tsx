@@ -1,6 +1,9 @@
 import { configureStore } from "@reduxjs/toolkit";
-
+// import  {api} from '../slices/api'
 import FilterSlices from '../slices/FilterSlices'
+import { setupListeners } from "@reduxjs/toolkit/dist/query";
+// import {authSlice} from '../slices/AuthSlice'
+import logger from 'redux-logger'
 
 
 import AuthReducer, { loadUser } from "../slices/AuthSlice";
@@ -21,8 +24,12 @@ export const store = configureStore({
     users: UsersSlice,
     filterState: FilterSlices,
     
+    
   },
+  middleware: getDefaultMiddleware=>getDefaultMiddleware().concat(logger),
+  devTools:false
 });
+setupListeners(store.dispatch)
 
 store.dispatch(getTotal());
 store.dispatch(loadUser(null));
