@@ -44,10 +44,9 @@ export const registerUser = createAsyncThunk(
         password: values.password,
         adress: values.adress,
       });
-
       localStorage.setItem("token", token.data);
-
       return token.data;
+      
     } catch (err: any) {
       console.log(err.response.data);
       return rejectWithValue(err.response.data);
