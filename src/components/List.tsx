@@ -23,16 +23,16 @@ const List = (category: any) => {
 
   return (
     <div className="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3 mt-2">
-      {products.map((product: any) =>
+      {products?.map((product: any) =>
         product.category === categoryName ? (
           <div className= "container mx-10 my-10">
           <div className="d-flex justify-content-center" key={product._id}>
-            <div className="card my-card border border-warning  p-4 my-5" >
-              <img src={product.image} className="card-img-top" key={product.name} alt="..." />
-              <div className="card-body border border-warning" >
+            <div className="card my-card border border-warning rounded-9" >
+              <img src={product.image} className="card-img-top rounded-9" key={product.name} alt="..." />
+              <div className="card-body border border-warning rounded-9" >
                 <h5 className="card-title">{product.name}</h5>
-                <p className="card-text">{product.desc}</p>
-                <p className="card-text">desc</p>
+                <p className="card-text">{product.description}</p>
+                <p className="card-text">Descripción</p>
                 <p className="card-text">
                   ${product.price.toFixed(2).toLocaleString()}
                 </p>
@@ -41,7 +41,6 @@ const List = (category: any) => {
                   onClick={() => handleAddCart(product)}
                 >
                   <strong> Agregar</strong>
-                 
                 </button>
 
                 <button
