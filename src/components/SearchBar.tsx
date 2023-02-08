@@ -1,5 +1,4 @@
 import React, { FormEvent, useState } from "react";
-
 import { useAppDispatch, useAppSelector } from "./../hooks/hooks";
 import { setFiltersAction } from "../redux/slices/FilterSlices/filterActions";
 import { productsFetch } from "../redux/slices/ProductsSlice";

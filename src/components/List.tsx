@@ -27,7 +27,7 @@ const List = (category: any) => {
         product.category === categoryName ? (
           <div className= "container mx-10 my-10">
           <div className="d-flex justify-content-center" key={product._id}>
-            <div className="card my-card border border-warning rounded-9" >
+            <div className="card my-card border my-card" >
               <img src={product.image} className="card-img-top rounded-9" key={product.name} alt="..." />
               <div className="card-body border border-warning rounded-9" >
                 <h5 className="card-title">{product.name}</h5>

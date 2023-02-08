@@ -15,7 +15,7 @@ function Carousel() {
             <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="4" aria-label="Slide 5" className= "active"></button>
         </div> 
         <div className="carousel-inner bg-warning">
-          <div className="carousel-item active" >
+          <div className="carousel-item active bg-warning" >
             <br></br>
             <br></br>
             <br></br>
@@ -32,7 +32,7 @@ function Carousel() {
                 <h4 className= "text-dark">Remera anaranjada Rocket</h4>
               </div>
     </div>
-            <div className="carousel-item">
+            <div className="carousel-item bg-warning">
             <br></br>
             <br></br>
             <br></br>
@@ -49,7 +49,7 @@ function Carousel() {
           <h4 className= "text-dark">Funda Notebook Love Henry</h4>
       </div>
     </div>
-    <div className="carousel-item">
+    <div className="carousel-item bg-warning">
     <br></br>
     <br></br>
       <br></br>
@@ -66,7 +66,7 @@ function Carousel() {
         <h4 className= "text-dark">Mate Algarrobo</h4>
         </div>
       </div>
-      <div className="carousel-item">
+      <div className="carousel-item bg-warning">
       <br></br>
       <br></br>
       <br></br>
@@ -84,7 +84,7 @@ function Carousel() {
           <h4 className= "text-dark">Termo Rocket</h4>
         </div>
     </div>
-    <div className="carousel-item">
+    <div className="carousel-item bg-warning">
     <br></br>
     <br></br>
       <br></br>

@@ -88,7 +88,7 @@ const usersSlice = createSlice({
       );
       state.users = updatedUser;
       state.editStatus = "success";
-      toast.info("Se ha atualizado el usuario");
+      toast.info("Se ha actualizado el usuario");
     },
     [userEdit.rejected]: (state, action: PayloadAction<any>) => {
       state.editStatus = "rejected";

@@ -6,6 +6,7 @@ import { useDispatch, useSelector } from "react-redux";
 import { getTotal } from "../redux/slices/CartSlice";
 import { Pagination } from "./Pagination";
 import { Link } from "react-router-dom";
+import "./../css/home.css";
 
 function Home() {
   const dispatch = useDispatch();
@@ -29,8 +30,8 @@ function Home() {
 
   return (
     <>
-      <div className="container-fluid pb-5">
-        <div className="d-flex my-5">
+      <div className="container-fluid pb-5 bg my-bg">
+        <div className="d-flex mt-0 pb-5 pt-5">
           <Carousel />
         </div>
 
