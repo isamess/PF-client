@@ -23,6 +23,7 @@
   },
   "include": [
     "src",
-    "src/app"
+    "src/app",
+    "api/dist"
   ]
 }
