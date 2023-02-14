@@ -61,6 +61,5 @@
     "devDependencies": {
     "@types/jest": "^29.2.5",
     "@types/node": "^18.11.13"
-  },
-  "proxy": "http://localhost:5000"
+  }
 }
