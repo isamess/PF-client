@@ -1,7 +1,7 @@
 
 
 // export const url = "https://pf-api-rhuf.onrender.com";
-export const url = "http://localhost:3001/api";
+export const url = "http://localhost:3001/api/dist";
 
 export const setHeaders = () => {
   const headers: any = {
