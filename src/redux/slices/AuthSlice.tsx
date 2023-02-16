@@ -43,7 +43,6 @@ export const registerUser = createAsyncThunk(
         name: values.name,
         email: values.email,
         password: values.password,
-        adress: values.adress,
       });
       localStorage.setItem("token", token.data);
       return token.data;
@@ -88,7 +87,6 @@ const authSlice = createSlice({
           token: action.payload,
           name: user.name,
           email: user.email,
-          adress: user.adress,
           _id: user._id,
           isAdmin: user.isAdmin,
           registerStatus: "sucess",
@@ -131,7 +129,6 @@ const authSlice = createSlice({
             token: action.payload,
             name: user.name,
             email: user.email,
-            adress: user.adress,
             _id: user._id,
             isAdmin: user.isAdmin,
             registerStatus: "sucess",
@@ -172,7 +169,6 @@ const authSlice = createSlice({
             token: action.payload,
             name: user.name,
             email: user.email,
-            adress: user.adress,
             _id: user._id,
             isAdmin: user.isAdmin,
             registerStatus: "sucess",
