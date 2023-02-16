@@ -1,6 +1,7 @@
 import { createSlice, createAsyncThunk, PayloadAction } from "@reduxjs/toolkit";
 import axios from "axios";
-import { url, setHeaders } from "./api";
+import { setHeaders } from "./api";
+const url = "https://pf-api-e8h6.onrender.com"
 
 type InitialState = {
   list: Array<any>;

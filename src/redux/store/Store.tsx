@@ -1,9 +1,6 @@
 import { configureStore } from "@reduxjs/toolkit";
 import FilterSlices from '../slices/FilterSlices'
 
-
-
-
 import AuthReducer, { loadUser } from "../slices/AuthSlice";
 import cartReducer, { getTotal } from "../slices/CartSlice";
 import productsReducer, {

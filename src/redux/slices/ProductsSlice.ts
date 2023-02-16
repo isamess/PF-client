@@ -1,8 +1,9 @@
 import { createAsyncThunk, createSlice, PayloadAction } from "@reduxjs/toolkit";
 import axios from "axios";
 import { toast } from "react-toastify";
-import { setHeaders, url } from "./api";
+import { setHeaders } from "./api";
 
+const url = "https://pf-api-e8h6.onrender.com"
 type InitialState = {
   items: Array<any>;
   categories: Array<any>;
